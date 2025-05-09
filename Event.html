@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>EBC Club - Events</title>
+  <link rel="stylesheet" href="css/event.css" />
+</head>
+<body>
+  <header>
+    <nav class="navbar" role="navigation" aria-label="Main navigation">
+      <div class="PPSU-logo-container">
+        <img src="thumbnials/img/PPSU_NAAC-A+__Black___1_-removebg-preview.png" alt="logo" class="PPSU-logo" >
+      </div>
+      <div class="hamburger" id="hamburger" aria-label="Toggle navigation" role="button">☰</div>
+      <ul class="nav-links" id="nav-links" >
+        <li><a  href="Home.html">Home</a></li>
+        <li><a  href="About.html">About</a></li>
+        <li><a href="Event.html">Events</a></li>
+        <li><a href="Team.html">Team</a></li>
+        <li><a href="Contact.html">Contact</a></li>
+        <li><a href="Join-us.html">Join Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+
+  <main class="events-section">
+    <h2>Our Events</h2>
+
+    <div class="event-list">
+      <h3>Choose an Event:</h3>
+      <ul id="event-selector">
+        <li onclick="showEvent('techfest')">TechFest 2024</li>
+        <li onclick="showEvent('cultural')">Cultural Night</li>
+        <li onclick="showEvent('sports')">Sports Meet</li>
+      </ul>
+    </div>
+
+    <div id="event-display">
+
+      <!-- Default: TechFest -->
+      <div class="event" id="techfest">
+        <h3>TechFest 2024</h3>
+        <p>Date: March 20, 2024</p>
+        <p>Description: A 3-day event with coding contests, robotics, and innovation exhibitions.</p>
+        <div class="event-gallery">
+          <img src="img/techfest1.jpg" alt="TechFest Img 1" />
+          <img src="img/techfest2.jpg" alt="TechFest Img 2" />
+        </div>
+        <video controls>
+          <source src="videos/techfest.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </div>
+
+      <div class="event" id="cultural" style="display:none;">
+        <h3>Cultural Night</h3>
+        <p>Date: April 12, 2024</p>
+        <p>Description: Music, dance, drama, and an open mic night featuring student talents.</p>
+        <div class="event-gallery">
+          <img src="img/cultural1.jpg" alt="Cultural Img 1" />
+          <img src="img/cultural2.jpg" alt="Cultural Img 2" />
+        </div>
+        <video controls>
+          <source src="videos/cultural.mp4" type="video/mp4" />
+        </video>
+      </div>
+
+      <div class="event" id="sports" style="display:none;">
+        <h3>Annual Sports Meet</h3>
+        <p>Date: May 5, 2024</p>
+        <p>Description: Track events, cricket matches, football tournaments, and more.</p>
+        <div class="event-gallery">
+          <img src="img/sports1.jpg" alt="Sports Img 1" />
+          <img src="img/sports2.jpg" alt="Sports Img 2" />
+        </div>
+        <video controls>
+          <source src="videos/sports.mp4" type="video/mp4" />
+        </video>
+      </div>
+
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-logo">
+        <h2><span class="logo-icon">E</span>BC CLUB</h2>
+        <p>Subscribe to Our Blogs</p>
+        <form class="subscribe-form">
+          <input type="email" placeholder="Enter your email" />
+          <button type="submit"><i class="fas fa-arrow-right"></i></button>
+        </form>
+        <p>Get connected with us on social networks:</p>
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#"><i class="fab fa-x-twitter"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+  
+      <div class="footer-links">
+        <h3>OUR INITIATIVES</h3>
+        <ul>
+          <li><a href="#">E-Summit</a></li>
+          <li><a href="#">Hackathons</a></li>
+          <li><a href="#">Workshops</a></li>
+          <li><a href="#">Innovation Lab</a></li>
+          <li><a href="#">Webinars</a></li>
+        </ul>
+      </div>
+  
+      <div class="footer-links">
+        <h3>USEFUL LINKS</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="team.html">Team</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+  
+      <div class="footer-contact">
+        <h3>CONTACT</h3>
+        <p><i class="fas fa-map-marker-alt"></i> PPSU Campus, Gujarat, India</p>
+        <p><i class="fas fa-envelope"></i> ebc@ppsu.ac.in</p>
+        <p><i class="fas fa-phone"></i> +91 12345 67890</p>
+      </div>
+    </div>
+  
+    <div class="footer-bottom">
+      &copy; 2025 Copyright: PPSU EBC Club
+    </div>
+  </footer>
+  
+  <script src="js/event.js"></script>
+</body>
+</html>
